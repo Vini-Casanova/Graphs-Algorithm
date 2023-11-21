@@ -9,10 +9,10 @@ def dijsktra(grafo, origem, dest):
     'D':{'custo':inf,'pred':[]},
     'E':{'custo':inf,'pred':[]},
     'F':{'custo':inf,'pred':[]},
-    'G': {'custo': inf, 'pred': []},
-    'H': {'custo': inf, 'pred': []},
-    'I': {'custo': inf, 'pred': []},
-    'J': {'custo': inf, 'pred': []}
+    'G':{'custo':inf,'pred':[]},
+    'H':{'custo':inf,'pred':[]},
+    'I':{'custo':inf,'pred':[]},
+    'J':{'custo':inf,'pred':[]}
     }
 
     data_nos[origem]['custo'] = 0

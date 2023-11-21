@@ -10,14 +10,14 @@ graph ={
         'I':{'H', 'E', 'F'},
         'J':{'B', 'H'}
     }
-visited = set()
-def dfs(visited, graph, root, grau):
-    if root not in visited:
-        profund = grau
-        print(f'Profundidade:{profund}  Nó: {root}')
-        visited.add(root)
-        profund+=1
-        for neighbour in graph[root]:
-          dfs(visited, graph, neighbour,profund)
+visitados = set()
+def dfs(visitados, grafo, origem, grau):
+    if origem not in visitados:
+        profundidae = grau
+        print(f'Profundidade:{profundidae}  Nó: {origem}')
+        visitados.add(origem)
+        profundidae+=1
+        for vizinho in grafo[origem]:
+          dfs(visitados, grafo, vizinho, profundidae)
 
-dfs(visited,graph,'J',0)
+dfs(visitados,graph,'J',0)
